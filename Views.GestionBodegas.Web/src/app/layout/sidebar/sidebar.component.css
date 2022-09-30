@@ -1,0 +1,34 @@
+.container
+{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+}
+
+.sidebar
+{
+    width: 300px;
+    background-color: darkslategray;
+}
+.sidebar div
+{
+    color: white;
+    padding: 20px;
+}
+.sidebar div *
+{
+    width: 100%;
+}
+.sidebar select
+{
+    color: black;
+    font-size: 18px;
+    padding: 5px;
+}
+
+.logo
+{
+    margin-top: 50px;
+    width: 100%;
+}

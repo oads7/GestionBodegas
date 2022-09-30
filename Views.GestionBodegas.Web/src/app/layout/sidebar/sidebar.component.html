@@ -1,0 +1,30 @@
+<mat-drawer-container class="container">
+    <mat-drawer class="sidebar" mode="side" opened>
+        <img class="logo" src="../../assets/logo.svg" alt="">
+
+        <div>
+            <h4>Mis Bodegas</h4>
+            <select (change)="changeWarehouse($event)">
+                <option *ngFor="let item of warehousesList"
+                        [ngValue]="item.warehouseId">{{item.warehouseName}}</option>
+            </select>
+        </div>
+
+        <div>
+            <h4>Menu</h4>
+            <br/>
+            <button mat-stroked-button (click)="redirectToListProduct()">
+                Listado Productos
+            </button><br/><br/>
+            <button mat-stroked-button (click)="redirectToCreateProduct()">
+                Crear Producto
+            </button><br/><br/>
+            <button mat-stroked-button (click)="redirectToListWarehouses()">
+                Listado Bodegas
+            </button>
+        </div>
+    </mat-drawer>
+    <mat-drawer-content>
+        <router-outlet></router-outlet>
+    </mat-drawer-content>
+</mat-drawer-container>

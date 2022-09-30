@@ -1,0 +1,15 @@
+<h3>Creacion de nuevos productos</h3>
+
+<form [formGroup]="newProductForm">
+    <mat-form-field appearance="fill">
+        <mat-label>Nombre</mat-label>
+        <input type="text" matInput formControlName="productName"
+                placeholder="Nombre">
+    </mat-form-field>
+    <br/>
+    <mat-form-field appearance="fill">
+        <mat-label>Descripcion</mat-label>
+        <input type="text" matInput formControlName="productDescription"
+                placeholder="Descripcion">
+    </mat-form-field>
+</form>
